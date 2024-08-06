@@ -12,4 +12,7 @@ export class UserListComponent {
 
   allUsers: User[] = this.userSer.GetAllUsers();
 
+  ShowUserDetails(user: User) {
+    this.userSer.OnShowDetails(user);
+  }
 }

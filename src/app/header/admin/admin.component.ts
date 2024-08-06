@@ -9,12 +9,11 @@ export class AdminComponent {
   constructor(private userSer: UserService) { }
 
   name: string = '';
-  gender: string = 'Male';
+  gender: string = 'male';
   subType: string = 'Yearly';
   status: string = 'Active';
 
   CreateNewUser() {
     this.userSer.CreateNewUser(this.name, this.gender, this.subType, this.status);
-    console.log(this.userSer.users);
   }
 }
