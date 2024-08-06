@@ -29,7 +29,11 @@ import { LoggerService } from './Services/logger.service';
     BrowserModule,
     FormsModule
   ],
-  providers: [SubscribeService, UserService, LoggerService],
+  providers: [
+    SubscribeService, 
+    // UserService, 
+    // LoggerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

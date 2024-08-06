@@ -2,7 +2,9 @@ import { Injectable } from "@angular/core";
 import { User } from "../Modles/User";
 import { LoggerService } from "./logger.service";
 
-@Injectable()  //used in side service that inject(use) another service.
+@Injectable({
+  providedIn: 'root'
+})  //used in side service that inject(use) another service.
 export class UserService{
   users: User[] = [
     new User('ali', 'male', 'Monthly', 'Active'),
