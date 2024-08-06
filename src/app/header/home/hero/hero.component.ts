@@ -8,8 +8,9 @@ import { SubscribeService } from 'src/app/Services/subscribe.service';
 export class HeroComponent {
 
   //1. HOW TO PROVIDE DEPENDENCY
-  constructor( private subService: SubscribeService) {}
+  // constructor( private subService: SubscribeService) {}
 
+  subService = inject(SubscribeService);
   OnSubscribe() {
     this.subService.OnSubscribeClicked();
   }
